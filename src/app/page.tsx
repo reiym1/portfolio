@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Link from 'next/link'
 export default function Home() {
   return (
     <main>
@@ -8,7 +8,9 @@ export default function Home() {
         {/* <progamer />
         <stremer />
         <review /> */}
-        <p className=""></p>
+        <Link href="progamer" className="">
+          tset
+        </Link>
       </div>
     </main>
   )
