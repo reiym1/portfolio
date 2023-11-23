@@ -16,6 +16,12 @@ export default function NavBar() {
         >
           {/* <Login /> */}
         </Link>
+        <Link
+          href="/auth"
+          className="rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500"
+        >
+          {/* <Login /> */}
+        </Link>
       </nav>
     </header>
   )
