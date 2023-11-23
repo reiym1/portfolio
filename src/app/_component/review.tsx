@@ -1,1 +1,3 @@
-// import type { portfolio1 } from '@portfolio1.code'
+import type { Database } from '../../../database.types'
+
+type review = Database['public']['Tables']['review']['Row']
