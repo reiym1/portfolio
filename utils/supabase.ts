@@ -1,4 +1,5 @@
-// import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs'
+// ↓ここ必ず@supabase/ssrに手直しする事
+import { createPagesBrowserClient } from '@supabase/auth-helpers-nextjs'
 import { Database } from '../database.types'
 
-// export default createBrowserSupabaseClient
+export default createPagesBrowserClient<Database>()
