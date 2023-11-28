@@ -11,10 +11,10 @@ export default function NavBar() {
           Home
         </Link>
         <Link
-          href="blogs"
+          href="/mypage"
           className="rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500"
         >
-          {/* <Login /> */}
+        マイページ
         </Link>
         <Link
           href="/auth"
