@@ -1,4 +1,4 @@
-import Auth from '../_component/auth'
+import Auth from '../component/auth'
 
 export default async function AuthPage() {
   return (

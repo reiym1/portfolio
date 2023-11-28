@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import ProGamer from './_component/progamer/page'
+import ProGamer from './component/progamer/page'
+// import ProgamerPage from './component/progamer'
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         {/* <ProGamer />
         <review /> */}
         <div className='flex justify-center relative"'>
-        <Link href="/_component/progamer/page" className="">
+        <Link href="/component/progamer" className="">
         <Image 
         src="/progamer-image/freepro.png" 
         width={200}
@@ -24,7 +25,7 @@ export default function Home() {
         </Link>
         </div>
       <div className='flex'>
-        <Link href="/streamer/page">
+        <Link href="/component/streamer">
           <Image
           src="/streamer-image/freest1.png"
           width={200}

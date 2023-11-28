@@ -1,6 +1,6 @@
 // ↓ここ必ず@supabase/ssrに手直しする事
 import { headers, cookies } from 'next/headers'
-import SupabaseListener from '../_component/supabase-listener'
+import SupabaseListener from '../component/supabase-listener'
 import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import type { Database } from '../../../database.types'
 
