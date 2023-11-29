@@ -17,6 +17,7 @@ export default function G502() {
     <Link href="https://gaming.logicool.co.jp/ja-jp/products/gaming-mice/g502-hero-gaming-mouse.910-005866.html">
     </Link>
     </div>
+    ここの下に商品レビューを置いておきたい
     </div>
     )
 }
