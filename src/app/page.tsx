@@ -42,6 +42,12 @@ export default function Home() {
     <Link 
     href="/component/mouse"
     >
+    <Image
+    src="/device-image/mouce.png"
+    width={150}
+    height={250}
+    alt='ゲーミングマウスのイメージ画像です'
+    />
     <p>マウス</p>
     </Link>
     <p>キーボード</p>
