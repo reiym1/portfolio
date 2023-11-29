@@ -1,4 +1,4 @@
-export default function TeamLayout({
+export default function LazLayout({
     children,
 }: {
     children: React.ReactNode
