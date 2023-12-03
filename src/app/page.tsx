@@ -16,7 +16,7 @@ export default function Home() {
       </div>
       {/* <ProGamer />
         <review /> */}
-      <div className='flex justify-center relative"'>
+      <div className="flex justify-center gap-8">
         <Link href="/component/progamer" className="">
           <Image
             src="/progamer-image/freepro.png"
@@ -40,6 +40,37 @@ export default function Home() {
           />
           <p>配信者</p>
         </Link>
+      </div>
+      <div className="flex justify-center m-10 gap-8">
+        <h2>デバイス</h2>
+      </div>
+      <div className="flex justify-center m-10 gap-8">
+        <Link href="/component/mouse">
+          <Image
+            src="/device-image/mouse.png"
+            width={150}
+            height={250}
+            alt="ゲーミングマウスのイメージ画像です"
+          />
+          <p>マウス</p>
+        </Link>
+        <Link href="/component/keyboard">
+          <Image
+            src="/device-image/keyboard.png"
+            width={200}
+            height={200}
+            alt="キーボードのイメージ画像です"
+          />
+          <p className="m-3">キーボード</p>
+        </Link>
+        <p>ディスプレイ</p>
+      </div>
+      <div className="flex justify-center m-10 gap-8">
+        {/* <Link  */}
+        {/* // href = */}
+        {/* // > */}
+        <h3>商品レビュー</h3>
+        {/* // </Link> */}
       </div>
     </main>
   )

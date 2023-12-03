@@ -13,7 +13,16 @@ export default function PlayerPage() {
             width={200}
             height={300}
           />
-          <p className="m-10 h-1 text-2xl text-center">Dep</p>
+          <h1 className="m-10 h-1 text-2xl text-center">Dep</h1>
+        </Link>
+        <Link href="/component/team/zeta/player/laz">
+          <Image 
+          src="/progamer-image/Laz.jpg"
+          alt="Lazさん宣材写真"
+          width={200}
+          height={300}
+          />
+          <h2 className="m-10 h-1 text-2xl text-center">Laz</h2>
         </Link>
       </div>
     </main>

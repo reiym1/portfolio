@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function ProGamerPage() {
   return (
     <main>
-      <div className="flex">
+      <div className="flex justify-center">
       <Link href="/component/progamer/japan">
       <Image  
         src="/country-image/japan.avif" 
@@ -14,8 +14,8 @@ export default function ProGamerPage() {
       />
       <p className="m-10 h-1 text-2xl text-center">国内</p>
       </Link>
-      </div>
-      <div className="flex">
+      {/* </div>
+      <div className="flex justify-center"> */}
       <Link href="/international">
       <Image 
           src="/country-image/international.jpg" 
