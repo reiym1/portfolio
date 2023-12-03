@@ -1,18 +1,26 @@
 // ↓ここ必ず@supabase/ssrに手直しする事
-import { headers, cookies } from 'next/headers'
+import { cookies } from 'next/headers'
 import SupabaseListener from '../component/supabase-listener'
-import { createServerComponentClient } from '@supabase/auth-helpers-nextjs'
 import type { Database } from '../../../database.types'
+import { createServerClient } from '@supabase/ssr'
 
 export default async function AuthLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  const supabase = createServerComponentClient<Database>({
-    // headers,
-    cookies,
-  })
+  const cookieStore = cookies()
+  const supabase = createServerClient<Database>(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,
+    {
+      cookies: {
+        get(name: string) {
+          return cookieStore.get(name)?.value
+        },
+      },
+    }
+  )
   const {
     data: { session },
   } = await supabase.auth.getSession()
