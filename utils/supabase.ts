@@ -1,4 +1,3 @@
-// ↓ここ必ず@supabase/ssrに手直しする事
 import { createBrowserClient } from '@supabase/ssr'
 import { Database } from '../database.types'
 

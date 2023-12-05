@@ -1,4 +1,3 @@
-// ↓ここ必ず@supabase/ssrに手直しする事
 import { cookies } from 'next/headers'
 import SupabaseListener from '../component/supabase-listener'
 import type { Database } from '../../../database.types'
