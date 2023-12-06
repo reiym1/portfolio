@@ -1,6 +1,6 @@
 import NavBar from "@/app/component/nav-bar"
 
-export default function ZeusLayout({
+export default function FakerLayout({
     children,
 }: {
     children: React.ReactNode

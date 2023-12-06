@@ -24,6 +24,15 @@ return (
         />
         <h2 className="m-10 h-1 text-2xl text-center">Oner</h2>
         </Link>
+        <Link href="/component/team/t1/player/faker">
+        <Image 
+        src="/progamer-image/Faker.jpg"
+        alt="Faker宣材写真"
+        width={200}
+        height={300}
+        />
+        <h3 className="m-10 h-1 text-2xl text-center">Faler</h3>
+        </Link>
     </div>
     </main>
 )
