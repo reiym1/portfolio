@@ -4,7 +4,7 @@ import Link from "next/link"
 export default function ProGamerPage() {
   return (
     <main>
-      <div className="flex justify-center">
+      <div className="flex justify-center gap-10 p-20">
       <Link href="/component/progamer/japan">
       <Image  
         src="/country-image/japan.avif" 
@@ -16,7 +16,7 @@ export default function ProGamerPage() {
       </Link>
       {/* </div>
       <div className="flex justify-center"> */}
-      <Link href="/international">
+      <Link href="/component/progamer/international">
       <Image 
           src="/country-image/international.jpg" 
           alt="海外背景"

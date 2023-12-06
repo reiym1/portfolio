@@ -1,4 +1,4 @@
-export default function InternationalLayout({
+export default function ZeusLayout({
     children,
 }: {
     children: React.ReactNode
