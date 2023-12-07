@@ -29,13 +29,11 @@ export default function Home() {
         <p className="text-white absolute left-4 bottom-2">プロゲーマー</p>
         </div> */}
         </Link>
-      </div>
-      <div className="flex">
         <Link href="/component/streamer">
           <Image
             src="/streamer-image/freest1.png"
-            width={200}
-            height={250}
+            width={235}
+            height={270}
             alt="配信者一覧イメージ画像"
           />
           <p>配信者</p>
