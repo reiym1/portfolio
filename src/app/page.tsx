@@ -1,14 +1,17 @@
-'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import ProGamer from './component/progamer/page'
-import useStore from '../../store'
+import supabase from '../../utils/supabase'
 
 // import ProgamerPage from './component/progamer'
 
-export default function Home() {
-  const { loginUser } = useStore()
-  console.log(loginUser)
+export default async function Home() {
+  const { data, error } = await supabase.from('review').select()
+  const renderedData = data?.map((item) => (
+    <div key={item.id}>
+      <h3>{item.title}</h3>
+      {/* その他の必要なデータの表示 */}
+    </div>
+  ))
   return (
     <main>
       <div className="m-10 h-1 text-2xl text-center text-green-600">
@@ -71,6 +74,7 @@ export default function Home() {
         {/* // > */}
         <h3>商品レビュー</h3>
         {/* // </Link> */}
+        {renderedData}
       </div>
     </main>
   )
