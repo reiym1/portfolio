@@ -1,4 +1,4 @@
-export default function FreeLayout({
+export default function FreeLanceLayout({
     children,
 }: {
     children: React.ReactNode

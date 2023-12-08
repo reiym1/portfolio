@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export default function FreePage() {
+export default function FreeLancePage() {
     return (
         <main>
     <div className="flex justify-center gap-10 p-20">
