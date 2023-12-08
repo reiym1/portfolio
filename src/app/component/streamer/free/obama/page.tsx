@@ -17,9 +17,9 @@ export default function ObamaPage() {
         </div>
         <div className="text-center">
             <h2>実績</h2>
-            <p> 2023年Getting Over It with Bennett FoddyRTA 関東地区優勝
-                2023年VALORANT〇〇〇〇大会 最優秀コントローラー賞受賞※使用キャラ ブリムストーン
-                2022年Grand Theft Auto V ストリーマーサーバー 最も長くログインしていたプレイヤー賞受賞 ※50時間
+            <p> 2023年6月 Getting Over It with Bennett FoddyRTA 関東地区優勝
+                2022年9月 VALORANTSTREAMER交流大会 最優秀コントローラー賞受賞※使用キャラ ブリムストーン
+                2022年7月 Grand Theft Auto V ストリーマーサーバー 最も長くログインしていたプレイヤー賞受賞 ※50時間
             </p>
         </div>
         <div className="text-center">

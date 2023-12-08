@@ -17,9 +17,9 @@ export default function TonakaiPage() {
         </div>
         <div className="text-center">
             <h2>実績</h2>
-            <p> 2023年12月 Riot Games ONE TFT STREAMER東西戦 優勝
+            <p> 2023年12月 Riot Games ONETFT STREAMER東西戦 優勝
                 2023年8月 TFT STREAMERLeague 優勝  
-                2022年9月 VALORANT〇〇〇〇大会 優勝 使用キャラ ジェット 大会MVP
+                2022年9月 VALORANTSTREAMER交流大会 優勝 使用キャラ ジェット 大会MVP
             </p>
         </div>
         <div className="text-center">
