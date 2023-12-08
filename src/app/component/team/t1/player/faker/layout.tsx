@@ -1,4 +1,6 @@
-export default function InternationalLayout({
+import NavBar from "@/app/component/nav-bar"
+
+export default function FakerLayout({
     children,
 }: {
     children: React.ReactNode

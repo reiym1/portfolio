@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 
-export default function Review() {
+export default function DeviceReview() {  
   const [newTitle, setNewTitle] = useState('')
   const [newContent, setNewContent] = useState('')
 
