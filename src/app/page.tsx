@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import supabase from '../../utils/supabase'
 
-// import ProgamerPage from './component/progamer'
 
 export default async function Home() {
   const { data, error } = await supabase.from('review').select()
@@ -17,8 +16,6 @@ export default async function Home() {
       <div className="m-10 h-1 text-2xl text-center text-green-600">
         <h1>推し活をはかどらせよう！</h1>
       </div>
-      {/* <ProGamer />
-        <review /> */}
       <div className="flex justify-center gap-8">
         <Link href="/component/progamer" className="">
           <Image
@@ -28,9 +25,6 @@ export default async function Home() {
             alt="プロゲーマー一覧のイメージ画像"
           />
           <p className="">プロゲーマー</p>
-          {/* <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-b from-transparent to-black rounded-b-2xl">
-        <p className="text-white absolute left-4 bottom-2">プロゲーマー</p>
-        </div> */}
         </Link>
         <Link href="/component/streamer">
           <Image
@@ -67,11 +61,7 @@ export default async function Home() {
         <p>ディスプレイ</p>
       </div>
       <div className="flex justify-center m-10 gap-8">
-        {/* <Link  */}
-        {/* // href = */}
-        {/* // > */}
         <h3>商品レビュー</h3>
-        {/* // </Link> */}
         {renderedData}
       </div>
     </main>
