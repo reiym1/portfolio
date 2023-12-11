@@ -1,33 +1,17 @@
+'use client'
+
 import supabase from '../../../utils/supabase'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 
-export default function DeviceReview() {  
-  const [newTitle, setNewTitle] = useState('')
-  const [newContent, setNewContent] = useState('')
-
-  const addPost = async (e: { preventDefault: () => void }) => {
-    e.preventDefault()
-    try {
-      const { error } = await supabase.from('posts').insert([
-        {
-          title: newTitle,
-          content: newContent,
-        },
-      ])
-      if (error) throw error
-      await indexPost()
-      setNewTitle('')
-      setNewContent('')
-    } catch (error) {
-      alert('データの新規登録ができません')
-    }
+export default function DeviceReview() {
+  const addPost = async () => {
+    const { error } = await supabase.from('tests').insert({
+      text: 'test',
+    })
+    addPost()
   }
-}
-
-function indexPost() {
-  throw new Error('Function not implemented.')
 }
 
 // return (

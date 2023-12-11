@@ -1,16 +1,16 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import supabase from '../../utils/supabase'
-
+import DeviceReview from './component/review'
 
 export default async function Home() {
-  const { data, error } = await supabase.from('review').select()
-  const renderedData = data?.map((item) => (
-    <div key={item.id}>
-      <h3>{item.title}</h3>
-      {/* その他の必要なデータの表示 */}
-    </div>
-  ))
+  // const { data, error } = await supabase.from('users').select()
+  const { error } = await supabase.from('tests').insert({
+    id: 1234578,
+    text: 'test',
+  })
+  console.log(error)
+
   return (
     <main>
       <div className="m-10 h-1 text-2xl text-center text-green-600">
@@ -62,7 +62,6 @@ export default async function Home() {
       </div>
       <div className="flex justify-center m-10 gap-8">
         <h3>商品レビュー</h3>
-        {renderedData}
       </div>
     </main>
   )
