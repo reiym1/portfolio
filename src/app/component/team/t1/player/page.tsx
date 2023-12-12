@@ -31,7 +31,7 @@ return (
         width={200}
         height={300}
         />
-        <h3 className="m-10 h-1 text-2xl text-center">Faler</h3>
+        <h3 className="m-10 h-1 text-2xl text-center">Faker</h3>
         </Link>
     </div>
     </main>
