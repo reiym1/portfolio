@@ -1,17 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import supabase from '../../utils/supabase'
-import DeviceReview from './component/devicereview'
 import { User } from './context/user'
 
 export default async function Home() {
-  // const { data, error } = await supabase.from('users').select()
-  // const { error } = await supabase.from('tests').insert({
-  //   id: 1234578,
-  //   text: 'test',
-  // })
-  // console.log(error)
-
   return (
     <main>
       <User/>
@@ -49,7 +40,7 @@ export default async function Home() {
             height={250}
             alt="ゲーミングマウスのイメージ画像です"
           />
-          <p>マウス</p>
+          <p className="mt-1 h-1">マウス</p>
         </Link>
         <Link href="/component/keyboard">
           <Image
@@ -58,9 +49,17 @@ export default async function Home() {
             height={200}
             alt="キーボードのイメージ画像です"
           />
-          <p className="m-3">キーボード</p>
+          <p className="mt-4 h-1">キーボード</p>
         </Link>
-        <p>ディスプレイ</p>
+        <Link href="/component/keyboard">
+          <Image
+            src="/device-image/monitor.png"
+            width={150}
+            height={200}
+            alt="モニターのイメージ画像です"
+          />
+          <p className="mt-6 h-1">モニター</p>
+        </Link>
       </div>
       <div>
       </div>

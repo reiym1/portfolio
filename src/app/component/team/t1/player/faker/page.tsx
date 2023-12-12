@@ -3,8 +3,10 @@ import Link from "next/link"
 // import progamer from "...../component/progamer"
 
 export default function FakerPage() {
+const text = "T1のMIDレーナー。LoLのプロプレイヤーといえばこの方と言われるほど長くプロ選手を続けているプレイヤー。\n 世界最高峰のリーグと名高いLCKでプレイしておりMIDの神様と言われる程上手い。\n 人力スクリプトと言われている程上手く、現在27歳であり本来であればプレイヤーとして衰えてくるはずなのにまだ老いを知らないプレイを連発。\n (途中の文)Fakerのライズ、アジール、ビクター \n (最後の文)そして2023年WCS T1のMIDレーナーとして出場し優勝。前人未踏の4度目の優勝を果たした。";
+
     return (
-<div>
+<div >
     <div className="flex justify-center gap-10 p-20">
         <Image src="/progamer-image/Faker.jpg"
                     alt="Faker宣材写真"
@@ -21,14 +23,11 @@ export default function FakerPage() {
         LCK Summer 2023 準優勝
         </p>
     </div>
+    <div>
     <h3>選手紹介</h3>
-    <div className="flex ">
-    <p>
-        T1のMIDレーナー。LoLのプロプレイヤーといえばこの方と言われるほど長くプロ選手を続けているプレイヤー。
-        世界最高峰のリーグと名高いLCKでプレイしておりMIDの神様と言われる程上手い。
-        人力スクリプトと言われている程上手く、現在27歳であり本来であればプレイヤーとして衰えてくるはずなのにまだ老いを知らないプレイを連発。
-        (途中の文)Fakerのライズ、アジール、ビクター
-        (最後の文)そして2023年WCS T1のMIDレーナーとして出場し優勝。前人未踏の4度目の優勝を果たした。</p>
+    </div>
+    <div className="flex flex-col items-center">
+    <p className="whitespace-pre-wrap">{text}</p>
     </div>
     <div>
     <h4>使用デバイス</h4>

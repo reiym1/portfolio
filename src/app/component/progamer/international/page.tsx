@@ -12,7 +12,7 @@ return (
             width={200}
             height={300}
         />
-        <p className="m-10 h-1 text-2xl">T1</p>
+        <p className="m-10 h-1 text-center text-2xl">T1</p>
         </Link>
     </div>
     </main>

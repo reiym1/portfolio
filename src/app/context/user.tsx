@@ -25,7 +25,7 @@ export const User = () => {
           <p>名前: {user.user_name}</p>          
         </div>
       ) : (
-        'ユーザーが存在しません'
+        'ログインしてません'
       )}
     </div>
   );

@@ -12,7 +12,7 @@ export default function JapanPage() {
             width={200}
             height={300}
           />
-          <p className="m-10 h-1 text-2xl">DetonatioN FocusMe</p>
+          <p className="mt-5 mr-2 h-1 text-2xl ">DetonatioN FocusMe</p>
         </Link>
         <Link href="/component/team/zeta">
           <Image
