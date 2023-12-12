@@ -1,15 +1,15 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import supabase from '../../utils/supabase'
-import DeviceReview from './component/review'
+import DeviceReview from './component/devicereview'
 
 export default async function Home() {
   // const { data, error } = await supabase.from('users').select()
-  const { error } = await supabase.from('tests').insert({
-    id: 1234578,
-    text: 'test',
-  })
-  console.log(error)
+  // const { error } = await supabase.from('tests').insert({
+  //   id: 1234578,
+  //   text: 'test',
+  // })
+  // console.log(error)
 
   return (
     <main>
@@ -60,8 +60,7 @@ export default async function Home() {
         </Link>
         <p>ディスプレイ</p>
       </div>
-      <div className="flex justify-center m-10 gap-8">
-        <h3>商品レビュー</h3>
+      <div>
       </div>
     </main>
   )

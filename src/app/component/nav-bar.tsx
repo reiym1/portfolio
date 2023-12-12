@@ -11,10 +11,10 @@ export default function NavBar() {
           Home
         </Link>
         <Link
-          href="/mypage"
+          href="/device_reviews"
           className="rounded bg-gray-700 px-3 py-2 text-white hover:bg-gray-500"
         >
-        マイページ
+        デバイスレビュー
         </Link>
         <Link
           href="/auth"
