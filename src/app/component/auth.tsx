@@ -14,10 +14,11 @@ export default function Auth() {
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
     if (isLogin) {
-      const { error } = await supabase.auth.signInWithPassword({
+      const { data, error } = await supabase.auth.signInWithPassword({
         email,
         password,
       })
+      console.log(data)
       setEmail('')
       setPassword('')
       if (error) {
@@ -26,14 +27,21 @@ export default function Auth() {
         router.push('/')
       }
     } else {
-      const { error } = await supabase.auth.signUp({
+      const registerResponse = await supabase.auth.signUp({
         email,
         password,
       })
+      const { error } = await supabase.from('users').insert({
+        id: registerResponse.data.user?.id,
+        user_name: email,
+        avatar_url: email,
+        email,
+      })
+
       setEmail('')
       setPassword('')
-      if (error) {
-        alert(error.message)
+      if (registerResponse.error) {
+        alert(registerResponse.error.message)
       }
     }
   }
