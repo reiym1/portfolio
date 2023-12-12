@@ -1,4 +1,4 @@
-export default function KeyboardLayout({
+export default function TeamLayout({
     children,
 }: {
     children: React.ReactNode

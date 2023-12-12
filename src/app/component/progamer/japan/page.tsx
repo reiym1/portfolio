@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function JapanPage() {
   return (
     <main>
-      <div className="flex justify-center gap-10 p-20">
+      {/* <div className="flex justify-center gap-10 p-20">
         <Link href="/dfm">
           <Image
             src="/team-image/dfm.png"
@@ -12,7 +12,7 @@ export default function JapanPage() {
             width={200}
             height={300}
           />
-          <p className="m-10 h-1 text-2xl">DetonatioN FocusMe</p>
+          <p className="mt-5 mr-2 h-1 text-2xl ">DetonatioN FocusMe</p>
         </Link>
         <Link href="/component/team/zeta">
           <Image
@@ -32,7 +32,18 @@ export default function JapanPage() {
           />
           <p className="m-10 h-1 text-2xl text-center">Crazy Raccoon</p>
         </Link>
-      </div>
+      </div> */}
+        <div className="flex justify-center gap-10 p-20">
+        <Link href="/component/team/griffon">
+          <Image
+            src="/team-image/grifon.jpg"
+            alt="架空チームロゴ"
+            width={200}
+            height={300}
+          />
+          <p className="mt-5 mr-2 h-1 text-2xl">Griffon</p>
+        </Link>
+        </div>
     </main>
   )
 }

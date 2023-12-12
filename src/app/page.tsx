@@ -1,22 +1,14 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import supabase from '../../utils/supabase'
-import DeviceReview from './component/review'
 import { User } from './context/user'
 
 export default async function Home() {
-  const { error } = await supabase.from('tests').insert({
-    id: 1234578,
-    text: 'test',
-  })
-  console.log(error)
-
   return (
     <main>
+      <User/>
       <div className="m-10 h-1 text-2xl text-center text-green-600">
         <h1>推し活をはかどらせよう！</h1>
       </div>
-      <User />
       <div className="flex justify-center gap-8">
         <Link href="/component/progamer" className="">
           <Image
@@ -48,7 +40,7 @@ export default async function Home() {
             height={250}
             alt="ゲーミングマウスのイメージ画像です"
           />
-          <p>マウス</p>
+          <p className="mt-1 h-1">マウス</p>
         </Link>
         <Link href="/component/keyboard">
           <Image
@@ -57,13 +49,19 @@ export default async function Home() {
             height={200}
             alt="キーボードのイメージ画像です"
           />
-          <p className="m-3">キーボード</p>
+          <p className="mt-4 h-1">キーボード</p>
         </Link>
-        <p>ディスプレイ</p>
+        <Link href="/component/keyboard">
+          <Image
+            src="/device-image/monitor.png"
+            width={150}
+            height={200}
+            alt="モニターのイメージ画像です"
+          />
+          <p className="mt-6 h-1">モニター</p>
+        </Link>
       </div>
-      <div className="flex justify-center m-10 gap-8">
-        <h3>商品レビュー</h3>
-        <DeviceReview />
+      <div>
       </div>
     </main>
   )

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from './component/nav-bar'
-import Review from './component/devicereview'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,9 +22,6 @@ export default function RootLayout({
         <NavBar />
         {children}
       </body>
-      {/* <footer> */}
-        {/* <Review /> */}
-      {/* </footer> */}
     </html>
   )
 }
