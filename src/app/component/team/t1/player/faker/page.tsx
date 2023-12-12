@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
-// import progamer from "...../component/progamer"
 
 export default function FakerPage() {
-const text = "T1のMIDレーナー。LoLのプロプレイヤーといえばこの方と言われるほど長くプロ選手を続けているプレイヤー。\n 世界最高峰のリーグと名高いLCKでプレイしておりMIDの神様と言われる程上手い。\n 人力スクリプトと言われている程上手く、現在27歳であり本来であればプレイヤーとして衰えてくるはずなのにまだ老いを知らないプレイを連発。\n (途中の文)Fakerのライズ、アジール、ビクター \n (最後の文)そして2023年WCS T1のMIDレーナーとして出場し優勝。前人未踏の4度目の優勝を果たした。";
+    const achievements = "2023 World Championship Worlds 2023 優勝 \nLCK Summer 2023 準優勝"
+    const text = "T1のMIDレーナー。LoLのプロプレイヤーといえばこの方と言われるほど長くプロ選手を続けているプレイヤー。\n世界最高峰のリーグと名高いLCKでプレイしておりMIDの神様と言われる程上手い。\n人力スクリプトと言われている程上手く、現在27歳であり本来であればプレイヤーとして衰えてくるはずなのにまだ老いを知らないプレイを連発。\n(途中の文)特にFakerのライズ、アジール、ビクター、オリアナこのチャンピオン達を使用した時のパフォーマンスが素晴らしい \nそして2023年WCS T1のMIDレーナーとして出場し優勝。前人未踏の4度目の優勝を果たした。";
 
     return (
 <div >
@@ -15,22 +15,22 @@ const text = "T1のMIDレーナー。LoLのプロプレイヤーといえばこ�
         />
     </div>
     <div>
-        <h1 className="text-5xl text-center ">T1 Faker</h1>
+        <h1 className="text-5xl text-center">T1 Faker</h1>
+    </div>
+    <div className="mt-7">
+        <h2 className="text-2xl text-center">実績</h2>
+        <div className="flex flex-col items-center">
+        <p className="whitespace-pre-wrap">{achievements}</p>
+        </div>
     </div>
     <div>
-        <h2>実績</h2>
-        <p className="">2023 World Championship [Worlds 2023] 優勝
-        LCK Summer 2023 準優勝
-        </p>
-    </div>
-    <div>
-    <h3>選手紹介</h3>
+    <h3 className="text-2xl text-center">選手紹介</h3>
     </div>
     <div className="flex flex-col items-center">
     <p className="whitespace-pre-wrap">{text}</p>
     </div>
     <div>
-    <h4>使用デバイス</h4>
+    <h4 className="text-2xl text-center">使用デバイス</h4>
     </div>
     <div className="flex gap-8">
             <div>
@@ -63,7 +63,9 @@ const text = "T1のMIDレーナー。LoLのプロプレイヤーといえばこ�
     </div>
     </div>
     <div>
-        <p className="">ここに商品に対するレビュー投稿のページを置く</p>
+        <h5>この選手のモンタージュURL</h5>
+        {/* ここにモンタージュ動画やクリップURLを置く*/}
+        {/* <Link></Link> */}
     </div>
 </div>
     
