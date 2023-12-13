@@ -5,7 +5,7 @@ import supabase from '../../../utils/supabase'
 
 export const User = () => {
   const { loginUser } = useStore()
-  const [user, setUser] = useState<{ user_name?: string}>({});
+  const [user, setUser] = useState<{ user_name?: string }>({})
   useEffect(() => {
     supabase
       .from('users')
@@ -20,15 +20,15 @@ export const User = () => {
   }, [])
   return (
     <div>
-      {user.user_name? (
+      {user.user_name ? (
         <div>
-          <p>名前: {user.user_name}</p>          
+          <p>名前: {user.user_name}</p>
         </div>
       ) : (
         'ログインしてません'
       )}
     </div>
-  );
+  )
 
   // <div>{JSON.stringify(user) ?? 'ユーザーが存在しません'}</div>
 }
